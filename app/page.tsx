@@ -1,65 +1,114 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+    <main className="min-h-screen bg-black text-white px-6 py-14">
+      <section className="mx-auto max-w-4xl">
+        {/* Hero */}
+        <div className="mb-12">
+          <h1 className="text-4xl font-bold tracking-tight">Vidhya Suram</h1>
+          <p className="mt-3 text-xl text-gray-300">
+            Data Engineer • Distributed Systems • AWS • AI
+          </p>
+          <p className="mt-5 max-w-2xl text-gray-400">
+            I build scalable, production-grade data platforms and ML pipelines—focused on
+            reliability, performance, and measurable impact.
+          </p>
+
+          <div className="mt-7 flex gap-3">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="#projects"
+              className="rounded-xl bg-white px-4 py-2 text-black font-medium"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
+              View Projects
+            </a>
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="#contact"
+              className="rounded-xl border border-gray-700 px-4 py-2 text-white"
             >
-              Learning
-            </a>{" "}
-            center.
+              Contact
+            </a>
+          </div>
+        </div>
+
+        {/* About */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-semibold">About</h2>
+          <p className="mt-4 text-gray-400 leading-relaxed">
+            Data Engineer with 4+ years of experience building large-scale ETL pipelines,
+            real-time microservices, and ML production workflows on AWS. Previously at Experian,
+            working on systems handling billions of consumer records. Currently pursuing an MS in
+            Computer Science (AI Track) at Binghamton University.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Projects */}
+        <div id="projects" className="mb-12">
+          <h2 className="text-2xl font-semibold">Featured Projects</h2>
+
+          <div className="mt-6 grid gap-5">
+            <div className="rounded-2xl border border-gray-800 p-6">
+              <h3 className="text-xl font-bold">Scalable ETL Platform on AWS</h3>
+              <p className="mt-2 text-gray-400">
+                Built PySpark pipelines on EMR orchestrated with Airflow, integrating S3 and
+                Redshift. Reduced cost using lifecycle policies, autoscaling, and Spot Instances.
+              </p>
+              <p className="mt-3 text-sm text-gray-500">
+                Tech: PySpark, Airflow, EMR, S3, Glue, Redshift, CloudWatch
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-gray-800 p-6">
+              <h3 className="text-xl font-bold">Real-Time Microservices & Monitoring</h3>
+              <p className="mt-2 text-gray-400">
+                Designed Flask microservices on ECS with Jenkins CI/CD and Kafka integration for
+                failure detection and automated recovery.
+              </p>
+              <p className="mt-3 text-sm text-gray-500">
+                Tech: Python, Flask, Kafka, ECS, Jenkins, CloudWatch
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-gray-800 p-6">
+              <h3 className="text-xl font-bold">GenAI LinkedIn Post Generator</h3>
+              <p className="mt-2 text-gray-400">
+                Built a Streamlit + LangChain app using Groq-hosted LLMs to generate style-consistent
+                posts via topic extraction and few-shot prompting.
+              </p>
+              <p className="mt-3 text-sm text-gray-500">
+                Tech: Python, Streamlit, LangChain, LLMs
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+
+        {/* Contact */}
+        <div id="contact" className="mb-6">
+          <h2 className="text-2xl font-semibold">Contact</h2>
+          <div className="mt-4 text-gray-400">
+            <p>
+              Email:{" "}
+              <a className="underline" href="mailto:vidhyareddy131@gmail.com">
+                vidhyareddy131@gmail.com
+              </a>
+            </p>
+            <p className="mt-2">
+              LinkedIn:{" "}
+              <a className="underline" href="https://linkedin.com/in/vidhya131" target="_blank">
+                linkedin.com/in/vidhya131
+              </a>
+            </p>
+            <p className="mt-2">
+              GitHub:{" "}
+              <a className="underline" href="https://github.com/vidhya131" target="_blank">
+                github.com/vidhya131
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <footer className="pt-10 text-sm text-gray-600">
+          © {new Date().getFullYear()} Vidhya Suram
+        </footer>
+      </section>
+    </main>
   );
 }
