@@ -40,7 +40,7 @@ export default function Home() {
 
       {diagram ? (
         <pre className="mt-5 whitespace-pre-wrap rounded-xl border border-neutral-800 bg-black/60 p-4 font-mono text-sm text-emerald-300">
-{diagram}
+          {diagram}
         </pre>
       ) : null}
 
@@ -95,7 +95,7 @@ export default function Home() {
               Contact
             </a>
             <a
-              href="/Vidhya_resume_SE.pdf"
+              href="/Vidhya_Suram_Resume.pdf"
               download
               className="rounded-xl border border-neutral-800 bg-neutral-950 px-3 py-1.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
             >
@@ -107,86 +107,104 @@ export default function Home() {
 
       <div id="top" className="mx-auto max-w-5xl px-6 py-14">
         {/* HERO */}
-        <section className="mb-14">
-          <p className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-950 px-3 py-1 text-xs text-neutral-300">
-            Open to roles • Data Engineering / ML Platform
-          </p>
+        <section className="mb-14 flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:justify-between">
+          {/* LEFT - TEXT */}
+          <div className="max-w-2xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-950 px-3 py-1 text-xs text-neutral-300">
+              Open to roles • Data Engineering / ML Platform
+            </p>
 
-          <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
-            Vidhya Suram
-          </h1>
+            <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
+              Vidhya Suram
+            </h1>
 
-          <p className="mt-3 text-xl text-neutral-300">
-            Data Engineer • Distributed Systems • AWS • Azure • Databricks • DBT • GenAI • ML/AI
-          </p>
+            <p className="mt-3 text-xl text-neutral-300">
+              Data Engineer • Distributed Systems • AWS • Azure • Databricks • GenAI • ML/AI
+            </p>
 
-          <p className="mt-5 max-w-2xl text-neutral-400 leading-relaxed">
-            I build scalable, production-grade data platforms and ML pipelines—focused on reliability,
-            performance, and measurable impact.
-          </p>
+            <p className="mt-5 max-w-2xl text-neutral-400 leading-relaxed">
+              I build scalable, production-grade data platforms and ML pipelines—focused on
+              reliability, performance, and measurable impact.
+            </p>
 
-          <div className="mt-7 flex flex-wrap gap-3">
-            <a
-              href="#projects"
-              className="rounded-xl bg-white px-5 py-2.5 text-black font-medium transition hover:bg-neutral-200"
-            >
-              View Projects
-            </a>
-            <a
-              href="#contact"
-              className="rounded-xl border border-neutral-800 px-5 py-2.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
-            >
-              Contact
-            </a>
-            <a
-              href="/Vidhya_Suram_Resume.pdf"
-              download
-              className="rounded-xl border border-neutral-800 px-5 py-2.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
-            >
-              Download Resume
-            </a>
-            <a
-              href="https://linkedin.com/in/vidhya131"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl border border-neutral-800 px-5 py-2.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/vidhya131"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl border border-neutral-800 px-5 py-2.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
-            >
-              GitHub
-            </a>
-          </div>
-          {/* RIGHT SIDE - PHOTO */}
-          <div className="relative">
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-2 shadow-lg">
-            <Image
-              src="/profile.jpg"
-              alt="Vidhya Suram"
-              width={200}
-              height={200}
-              className="rounded-xl object-cover"
-              priority
-            />
-          </div>
-          </div>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a
+                href="#projects"
+                className="rounded-xl bg-white px-5 py-2.5 text-black font-medium transition hover:bg-neutral-200"
+              >
+                View Projects
+              </a>
 
-          {/* IMPACT METRICS */}
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6 transition hover:border-neutral-600">
-              <p className="text-3xl font-bold">4+ yrs</p>
-              <p className="mt-2 text-sm text-neutral-400">Production Data Engineering</p>
+              <a
+                href="#contact"
+                className="rounded-xl border border-neutral-800 px-5 py-2.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
+              >
+                Contact
+              </a>
+
+              <a
+                href="/Vidhya_Suram_Resume.pdf"
+                download
+                className="rounded-xl border border-neutral-800 px-5 py-2.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
+              >
+                Download Resume
+              </a>
+
+              <a
+                href="https://linkedin.com/in/vidhya131"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-xl border border-neutral-800 px-5 py-2.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/vidhya131"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-xl border border-neutral-800 px-5 py-2.5 text-white transition hover:border-neutral-600 hover:bg-neutral-900"
+              >
+                GitHub
+              </a>
             </div>
-            <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6 transition hover:border-neutral-600">
-              <p className="text-3xl font-bold">Billions</p>
-              <p className="mt-2 text-sm text-neutral-400">Records processed at scale</p>
+
+            {/* IMPACT METRICS */}
+            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6 transition hover:border-neutral-600">
+                <p className="text-3xl font-bold">4+ yrs</p>
+                <p className="mt-2 text-sm text-neutral-400">
+                  Production Data Engineering
+                </p>
+              </div>
+              <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6 transition hover:border-neutral-600">
+                <p className="text-3xl font-bold">Billions</p>
+                <p className="mt-2 text-sm text-neutral-400">
+                  Records processed at scale
+                </p>
+              </div>
+              <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6 transition hover:border-neutral-600">
+                <p className="text-3xl font-bold">Master Student</p>
+                <p className="mt-2 text-sm text-neutral-400">
+                  Binghamton University - SUNY
+                </p>
+              </div>
+        
             </div>
-  
+          </div>
+
+          {/* RIGHT - PHOTO */}
+          <div className="shrink-0">
+            <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-2 shadow-lg">
+              <Image
+                src="/profile.jpg"
+                alt="Vidhya Suram"
+                width={260}
+                height={260}
+                className="rounded-xl object-cover"
+                priority
+              />
+            </div>
           </div>
         </section>
 
@@ -194,20 +212,42 @@ export default function Home() {
         <section className="mb-14">
           <h2 className="text-2xl font-semibold">About</h2>
           <p className="mt-4 max-w-4xl text-neutral-300 leading-relaxed">
-            Data Engineer with 4+ years of experience building large-scale ETL pipelines, real-time
-            microservices, and ML production workflows on AWS. Previously at Experian working on
-            systems handling billions of consumer records. Currently pursuing MS in Computer Science
-            (AI Track) at Binghamton University.
+            Data Engineer with 4+ years of experience building large-scale ETL pipelines,
+            real-time microservices, and ML production workflows on AWS. Previously at Experian
+            working on systems handling billions of consumer records. Currently pursuing MS in
+            Computer Science (AI Track) at Binghamton University.
           </p>
 
           {/* CURRENTLY EXPLORING */}
           <div className="mt-8 rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
             <h3 className="text-lg font-semibold">Currently Exploring</h3>
-            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-300">
-              <li>LLM evaluation & monitoring for production pipelines</li>
-              <li>Cost/performance tuning for distributed Spark workloads</li>
-              <li>RAG system design patterns (retrieval quality, chunking, guardrails)</li>
-            </ul>
+            <p className="mt-2 text-sm text-neutral-400">
+              What I’m actively learning and building with right now.
+            </p>
+
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-xl border border-neutral-800 bg-black/40 p-4 transition hover:border-neutral-600">
+                <p className="text-xs uppercase tracking-wide text-neutral-500">
+                  Cloud & Data
+                </p>
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-300">
+                  <li>Azure Cloud (Databricks, ADF/Synapse basics)</li>
+                  <li>Databricks workflows (Spark jobs, notebooks, pipelines)</li>
+                </ul>
+              </div>
+
+              <div className="rounded-xl border border-neutral-800 bg-black/40 p-4 transition hover:border-neutral-600">
+                <p className="text-xs uppercase tracking-wide text-neutral-500">
+                  GenAI
+                </p>
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-300">
+                  <li>LangChain, LlamaIndex</li>
+                  <li>RAG systems (chunking, retrieval, evaluation)</li>
+                  <li>LLMs (prompting, tools, structured outputs)</li>
+                  <li>LangGraph (agent workflows)</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -257,7 +297,10 @@ export default function Home() {
               ]}
               tech="Tech: Python, Streamlit, LangChain, LLMs (Groq-hosted)"
               links={[
-                { label: "GitHub Repo", href: "https://github.com/vidhya131/linkedin-post-generator" },
+                {
+                  label: "GitHub Repo",
+                  href: "https://github.com/vidhya131/linkedin-post-generator",
+                },
               ]}
             />
           </div>
@@ -273,6 +316,8 @@ export default function Home() {
               <p className="text-xs text-neutral-500">Cloud & Data Engineering</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <Pill>AWS</Pill>
+                <Pill>Azure</Pill>
+                <Pill>Databricks</Pill>
                 <Pill>EMR</Pill>
                 <Pill>Glue</Pill>
                 <Pill>Lambda</Pill>
@@ -292,6 +337,7 @@ export default function Home() {
                 <Pill>LangChain</Pill>
                 <Pill>RAG</Pill>
                 <Pill>LlamaIndex</Pill>
+                <Pill>LangGraph</Pill>
                 <Pill>PyTorch</Pill>
                 <Pill>TensorFlow</Pill>
                 <Pill>Docker</Pill>
@@ -304,34 +350,26 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CURRENTLY EXPLORING */}
-        <div className="mt-8 rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
-          <h3 className="text-lg font-semibold">Currently Exploring</h3>
+        {/* TECHNICAL WRITING */}
+        <section id="writing" className="mb-14 scroll-mt-28">
+          <h2 className="text-2xl font-semibold">Technical Writing</h2>
           <p className="mt-2 text-sm text-neutral-400">
-            What I’m actively learning and building with right now.
+            Even one strong write-up can boost recruiter confidence.
           </p>
 
-          <div className="mt-5 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-xl border border-neutral-800 bg-black/40 p-4 transition hover:border-neutral-600">
-              <p className="text-xs uppercase tracking-wide text-neutral-500">Cloud & Data</p>
-              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-300">
-                <li>Azure Cloud (Databricks, ADF/Synapse basics)</li>
-                <li>Databricks workflows (Spark jobs, notebooks, pipelines)</li>
-              </ul>
-            </div>
-
-            <div className="rounded-xl border border-neutral-800 bg-black/40 p-4 transition hover:border-neutral-600">
-              <p className="text-xs uppercase tracking-wide text-neutral-500">GenAI</p>
-              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-300">
-                <li>LangChain, LlamaIndex</li>
-                <li>RAG systems (chunking, retrieval, evaluation)</li>
-                <li>LLMs (prompting, tools, structured outputs)</li>
-                <li>LangGraph (agent workflows)</li>
-              </ul>
-            </div>
+          <div className="mt-6 rounded-2xl border border-neutral-800 bg-neutral-950 p-6 transition hover:border-neutral-600">
+            <h3 className="text-lg font-semibold">
+              Designing a Billion-Scale ETL Pipeline on AWS
+            </h3>
+            <p className="mt-2 text-sm text-neutral-300">
+              A practical overview of architecture, orchestration, observability, and cost optimization
+              for large-scale Spark pipelines.
+            </p>
+            <p className="mt-3 text-xs text-neutral-500">
+              (Add a link once you publish — Medium / LinkedIn / Dev.to / GitHub Pages)
+            </p>
           </div>
-        </div>
-
+        </section>
 
         {/* CONTACT */}
         <section id="contact" className="scroll-mt-28">
