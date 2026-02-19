@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const year = new Date().getFullYear();
 
@@ -159,6 +161,19 @@ export default function Home() {
             >
               GitHub
             </a>
+          </div>
+          {/* RIGHT SIDE - PHOTO */}
+          <div className="relative">
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-2 shadow-lg">
+            <Image
+              src="/profile.jpg"
+              alt="Vidhya Suram"
+              width={200}
+              height={200}
+              className="rounded-xl object-cover"
+              priority
+            />
+          </div>
           </div>
 
           {/* IMPACT METRICS */}
